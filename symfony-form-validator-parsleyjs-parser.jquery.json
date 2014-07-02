@@ -1,0 +1,28 @@
+{
+  "name": "symfony-form-validator-parsleyjs-parser",
+  "title": "Symfony Form validator ParsleyJS parser",
+  "description": "Applies the ParsleyJS validation constraints to the selected form from the Symfony Form validator object",
+  "version": "0.0.1",
+  "homepage": "",
+  "author": {
+    "name": "bichotll",
+    "url": "https://github.com/bichotll"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "licenses": [
+    {
+      "type": "Apache2",
+      "url": "http://opensource.org/licenses/Apache2"
+    }
+  ],
+  "dependencies": {
+    "jquery": "latest"
+  },
+  "keywords": [
+    "jquery-plugin"
+  ]
+}
