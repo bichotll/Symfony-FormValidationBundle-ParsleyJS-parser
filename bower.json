@@ -1,8 +1,9 @@
 {
   "name": "symfony-form-validator-parsleyjs-parser",
-  "version": "0.0.1",
   "dependencies": {},
   "devDependencies": {
+    "symfony-form-validator-parser": "1.*",
+    "parsleyjs": "2.*",
     "qunit": "~1.12.0",
     "jquery": "latest"
   }

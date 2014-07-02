@@ -1,11 +1,6 @@
-/*
- * symfony form validator parsleyjs parser
- * 
- *
- * Copyright (c) 2014 bichotll
- * Licensed under the Apache2 license.
- */
-
+/*! symfony-form-validator-parsleyjs-parser - v0.0.1 - 2014-07-02
+* https://github.com/bichotll/symfony-form-validator-parsleyjs-parser
+* Copyright (c) 2014 bichotll; Licensed Apache2 */
 (function($) {
 
     'use strict';
