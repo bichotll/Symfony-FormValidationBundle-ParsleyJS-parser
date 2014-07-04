@@ -66,6 +66,7 @@ $('body').append($form);
 
 
 ## Release History
+ - workaround parsley patter attr
  - **0.8.0** Hi papa, I'm alive n I walk...maybe I will do some mistake but, I did not created the tdd tests yet.
 
 
