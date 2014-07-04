@@ -1,11 +1,6 @@
-/*
- * symfony form validator parsleyjs parser
- * 
- *
- * Copyright (c) 2014 bichotll
- * Licensed under the Apache2 license.
- */
-
+/*! symfony-form-validator-parsleyjs-parser - v0.0.1 - 2014-07-02
+* https://github.com/bichotll/symfony-form-validator-parsleyjs-parser
+* Copyright (c) 2014 bichotll; Licensed Apache2 */
 (function($) {
 
     'use strict';
@@ -253,6 +248,7 @@
     var parsleyConstraints = {
         required: function(el){
             el.data('parsley-required', true);
+            el.attr('required', 'required');
         },
         email: function(el){
             el.data('parsley-type', 'email');
@@ -289,6 +285,7 @@
         },
         pattern: function(el, pattern){
             el.data('parsley-type-pattern', pattern);
+            el.attr('pattern', pattern);
         },
         minCheck: function(el, mincheck){
             el.data('parsley-type-mincheck', mincheck);
