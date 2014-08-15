@@ -1,4 +1,4 @@
-/*! symfony-form-validator-parsleyjs-parser - v0.0.1 - 2014-07-02
+/*! symfony-form-validator-parsleyjs-parser - 2014-07-02
 * https://github.com/bichotll/symfony-form-validator-parsleyjs-parser
 * Copyright (c) 2014 bichotll; Licensed Apache2 */
 (function($) {
@@ -247,54 +247,54 @@
      */
     var parsleyConstraints = {
         required: function(el){
-            el.data('parsley-required', true);
+            el.attr('data-parsley-required', true);
             el.attr('required', 'required');
         },
         email: function(el){
-            el.data('parsley-type', 'email');
+            el.attr('data-parsley-type', 'email');
         },
         number: function(el){
-            el.data('parsley-type', 'number');
+            el.attr('data-parsley-type', 'number');
         },
         integer: function(el){
-            el.data('parsley-type', 'integer');
+            el.attr('data-parsley-type', 'integer');
         },
         digits: function(el){
-            el.data('parsley-type', 'digits');
+            el.attr('data-parsley-type', 'digits');
         },
         alphanum: function(el){
-            el.data('parsley-type', 'alphanum');
+            el.attr('data-parsley-type', 'alphanum');
         },
         url: function(el){
-            el.data('parsley-type', 'url');
+            el.attr('data-parsley-type', 'url');
         },
         minLength: function(el, minlength){
-            el.data('parsley-type-minlength', minlength);
+            el.attr('data-parsley-minlength', parseInt(minlength));
         },
         maxLength: function(el, maxlength){
-            el.data('parsley-type-maxlength', maxlength);
+            el.attr('data-parsley-maxlength', parseInt(maxlength));
         },
         min: function(el, range){
-            el.data('parsley-type-min', range);
+            el.attr('data-parsley-min', range);
         },
         max: function(el, range){
-            el.data('parsley-type-max', range);
+            el.attr('data-parsley-max', range);
         },
         range: function(el, range){
-            el.data('parsley-type-range', range);
+            el.attr('data-parsley-range', range);
         },
         pattern: function(el, pattern){
-            el.data('parsley-type-pattern', pattern);
+            el.attr('data-parsley-pattern', pattern);
             el.attr('pattern', pattern);
         },
         minCheck: function(el, mincheck){
-            el.data('parsley-type-mincheck', mincheck);
+            el.attr('data-parsley-mincheck', mincheck);
         },
         maxCheck: function(el, maxcheck){
-            el.data('parsley-type-maxcheck', maxcheck);
+            el.attr('data-parsley-maxcheck', maxcheck);
         },
         equalto: function(el, equalto){
-            el.data('parsley-type-equalto', equalto);
+            el.attr('data-parsley-equalto', equalto);
         }
     };
 
