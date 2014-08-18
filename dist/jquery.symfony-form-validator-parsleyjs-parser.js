@@ -1,7 +1,4 @@
-/*! symfony-form-validator-parsleyjs-parser - v0.0.1 - 2014-08-15
-* https://github.com/bichotll/symfony-form-validator-parsleyjs-parser
-* Copyright (c) 2014 bichotll; Licensed Apache2 */
-/*! symfony-form-validator-parsleyjs-parser - 2014-07-02
+/*! symfony-form-validator-parsleyjs-parser - v0.0.1 - 2014-08-18
 * https://github.com/bichotll/symfony-form-validator-parsleyjs-parser
 * Copyright (c) 2014 bichotll; Licensed Apache2 */
 (function($) {
@@ -145,6 +142,7 @@
         'Symfony\\Component\\Validator\\Constraints\\Range': function($form, form, constraint){
             var range = "[" + constraint.min + "," + constraint.max + "]";
             parsleyConstraints.range($form, range);
+            parsleyConstraints.integer($form, range);
         },
         'Symfony\\Component\\Validator\\Constraints\\EqualTo': function($form, form, constraint){
             
